@@ -13,9 +13,11 @@ Feature: demo de behave con screenpy
 
   Scenario Outline: demo de behave con screenpy
     Given ingresa al aplicativo demo
-    When se ejecutan las acciones del demo <username> <password>
+    When se ejecutan las acciones del demo "<username>" "<password>"
     Then valida que el demo sea exitoso
     Examples:
       | username | password |
       | admin    | serenity |
+
+
 
