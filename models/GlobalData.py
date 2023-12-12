@@ -1,0 +1,4 @@
+
+class GlobalData:
+
+    actor = "Actor"
