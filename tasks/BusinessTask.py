@@ -21,5 +21,10 @@ class MeetingTask:
             # Click.on(BTN_SAVE_UNIT)
         )
 
-    def on_the_site(self):
-        return MeetingTask()
+    #@staticmethod
+    #def on_the_site():
+    #    return MeetingTask()
+
+
+def on_the_site():
+    return MeetingTask()

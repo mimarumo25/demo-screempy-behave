@@ -1,4 +1,4 @@
 
 class GlobalData:
 
-    actor = "Actor"
+    actorName = "Actor"

@@ -21,15 +21,15 @@ class CustomDriver:
             return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
         elif self.lower() == "firefox":
             firefox_options = Options()
-            # firefox_options.add_argument("--headless")  # mode sin cabeza
-            firefox_options.add_argument("--private")
+            # firefox_options.add_argument("--headless")
+            firefox_options.add_argument("--start-maximized")
 
             return webdriver.Firefox(service=Service(GeckoDriverManager().install()), options=firefox_options)
         elif self.lower() == "edge":
             edge_options = Options()
-            # edge_options.add_argument("--headless")  # mode sin cabeza
-            edge_options.add_argument("--inprivate")
+            # edge_options.add_argument("--headless")
+            edge_options.add_argument("--start-maximized")
 
             return webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_options)
         else:
-            raise ValueError(f"Unsupported self: {self}")
+            raise ValueError(f"Unsupported: {self}")
