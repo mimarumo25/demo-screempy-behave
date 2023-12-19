@@ -14,7 +14,7 @@ class LoginTask:
 
     def perform_as(self, actor):
         actor.attempts_to(
-            Wait.for_the(THE_DASHBOARD_TITLE).to_appear(),
+            Wait.for_the(THE_USERNAME_FIELD).to_appear(),
             Clear.the_text_from(THE_USERNAME_FIELD),
             Enter.the_text(self.username).into(THE_USERNAME_FIELD),
             Clear.the_text_from(THE_PASSWORD_FIELD),
